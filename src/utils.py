@@ -36,8 +36,9 @@ def evaluate_model(model, test_ds, class_names, save_dir=None):
             break
     
     # Calculate evaluation metrics
-    report = classification_report(y_true, y_pred, target_names=class_names, output_dict=True)
-    cm = confusion_matrix(y_true, y_pred)
+    labels = list(range(len(class_names)))  # Ensure labels match class indices
+    report = classification_report(y_true, y_pred, target_names=class_names, labels=labels, output_dict=True)
+    cm = confusion_matrix(y_true, y_pred, labels=labels)
     
     # Plot confusion matrix
     if save_dir:
