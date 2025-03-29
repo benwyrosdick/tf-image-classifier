@@ -22,11 +22,6 @@ This project is a TensorFlow-based image classification pipeline. It allows user
    pip install -r requirements.txt
    ```
 
-3. Ensure TensorFlow is installed. You can install it using:
-   ```bash
-   pip install tensorflow
-   ```
-
 ## Usage
 
 ### Training the Model
@@ -77,23 +72,10 @@ prediction = predict_single_image(image_path, model_path, class_names)
 print(f"Predicted class: {prediction}")
 ```
 
-## Directory Structure
-```
-tf-image-classifier/
-├── main.py               # Main script for training and evaluation
-├── src/
-│   ├── data_loader.py    # Data loading and preprocessing
-│   ├── model.py          # Model creation
-│   ├── train.py          # Training logic
-│   ├── utils.py          # Utility functions
-├── models/               # Directory to save trained models
-├── README.md             # Project documentation
-```
-
 ## Requirements
 - Python 3.7+
 - TensorFlow 2.x
-- Other dependencies listed in `requirements.txt`
+- dependencies listed in `requirements.txt`
 
 ## License
 This project is licensed under the MIT License. See the `LICENSE` file for details.
