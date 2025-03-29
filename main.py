@@ -5,7 +5,7 @@ import tensorflow as tf
 from src.data_loader import load_and_preprocess_data
 from src.model import create_model
 from src.train import train_model
-from src.utils import evaluate_model, predict_single_image
+from src.utils import evaluate_model
 
 def main():
     # Parse command line arguments

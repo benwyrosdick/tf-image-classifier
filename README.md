@@ -59,19 +59,6 @@ python main.py --data_dir /path/to/dataset --epochs 10
 ### Evaluating the Model
 After training, the script will evaluate the model on the validation dataset and print metrics like precision, recall, F1-score, and overall accuracy.
 
-### Predicting a Single Image
-To predict a single image, you can use the `predict_single_image` function from `src.utils`. Example:
-```python
-from src.utils import predict_single_image
-
-image_path = "/path/to/image.jpg"
-model_path = "/path/to/saved_model"
-class_names = ["class1", "class2"]
-
-prediction = predict_single_image(image_path, model_path, class_names)
-print(f"Predicted class: {prediction}")
-```
-
 ## Requirements
 - Python 3.7+
 - TensorFlow 2.x
